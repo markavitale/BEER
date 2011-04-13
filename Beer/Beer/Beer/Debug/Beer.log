@@ -1,11 +1,11 @@
-﻿Build started 4/12/2011 7:52:32 PM.
+﻿Build started 4/12/2011 8:57:14 PM.
      1>Project "C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\Beer\Beer\Beer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Touching "Debug\Beer.unsuccessfulbuild".
        ClCompile:
          All outputs are up-to-date.
        Link:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\Beer\Debug\Beer.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Beer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\Beer\Debug\Beer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\Beer\Debug\Beer.lib" /MACHINE:X86 Debug\Game.obj
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\BeerTest\Debug\Beer.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Beer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\BeerTest\Debug\Beer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\BeerTest\Debug\Beer.lib" /MACHINE:X86 Debug\Game.obj
          Debug\Item.obj
          Debug\Launcher.obj
          Debug\Player.obj
@@ -16,4 +16,4 @@
 
 Build FAILED.
 
-Time Elapsed 00:00:00.15
+Time Elapsed 00:00:00.23

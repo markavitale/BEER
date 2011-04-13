@@ -1,12 +1,15 @@
 #include <string>
+using namespace std;
 
 class Item {
 	public:
 		Item (std::string desc, Item itemList[]);
-
+		Item (std::string desc);
+		string getDesc();
 	private:
-		static std::string decription;
-		static Item interactableItems[];
+		string description;
+		static Item interactableItems[25];// have to set arbitrary size
+
 
 
 };
