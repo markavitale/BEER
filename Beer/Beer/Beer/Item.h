@@ -8,7 +8,7 @@ class Item {
 		string getDesc();
 	private:
 		string description;
-		static Item interactableItems[25];// have to set arbitrary size
+	//	static Item interactableItems[25];// have to set arbitrary size
 
 
 

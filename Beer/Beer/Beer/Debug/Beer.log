@@ -1,19 +1,31 @@
-﻿Build started 4/12/2011 8:57:14 PM.
+﻿Build started 4/13/2011 7:56:31 PM.
      1>Project "C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\Beer\Beer\Beer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Touching "Debug\Beer.unsuccessfulbuild".
+         Creating "Debug\Beer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         All outputs are up-to-date.
-       Link:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\BeerTest\Debug\Beer.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Beer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\BeerTest\Debug\Beer.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\BeerTest\Debug\Beer.lib" /MACHINE:X86 Debug\Game.obj
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp Item.cpp Launcher.cpp Player.cpp
+         Item.cpp
+         Generating Code...
+         Skipping... (no relevant changes detected)
+         Player.cpp
+         Launcher.cpp
+         Game.cpp
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\BeerTest\Debug\Beer.lib" /NOLOGO Debug\Game.obj
          Debug\Item.obj
          Debug\Launcher.obj
          Debug\Player.obj
          Debug\Region.obj
          Debug\View.obj
-     1>LINK : fatal error LNK1561: entry point must be defined
-     1>Done Building Project "C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\Beer\Beer\Beer.vcxproj" (build target(s)) -- FAILED.
+     1>Player.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>Launcher.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>Game.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         Beer.vcxproj -> C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\BeerTest\Debug\Beer.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\Beer.unsuccessfulbuild".
+         Touching "Debug\Beer.lastbuildstate".
+     1>Done Building Project "C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\Beer\Beer\Beer.vcxproj" (build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.23
+Time Elapsed 00:00:00.81
