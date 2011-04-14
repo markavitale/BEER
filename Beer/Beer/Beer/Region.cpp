@@ -19,3 +19,6 @@ int Region::getX() {
 int Region::getY() {
 	return y;
 };
+bool Region::isInsideRegion(int x1, int y1){
+	return (x1 > x && x1 < x +width && y1 > y && y1 < y + height);
+}

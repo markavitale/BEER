@@ -1,4 +1,5 @@
 #include "Player.h"
 
-Player::Player(string playerName) {
+Player::Player(string playerN) {
+	playerName = playerN;
 }

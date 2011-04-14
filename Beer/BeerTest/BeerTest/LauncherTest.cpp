@@ -1,9 +1,9 @@
 #include "Beer/Beer/Launcher.h"
 #include "WinUnit.h"
 
-BEGIN_TEST(ItemTest)
+BEGIN_TEST(LauncherTest)
 {
-	Launcher launcher = Launcher();
+//	Launcher launcher = Launcher();
 
 }
 END_TEST

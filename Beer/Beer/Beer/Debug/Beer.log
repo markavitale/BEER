@@ -1,18 +1,25 @@
-﻿Build started 4/13/2011 8:24:45 PM.
+﻿Build started 4/13/2011 8:59:11 PM.
      1>Project "C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\Beer\Beer\Beer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Beer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp Launcher.cpp Player.cpp
-         Player.cpp
-         Launcher.cpp
-     1>c:\documents and settings\localmgr\my documents\csse376\beer\beer\beer\beer\launcher.cpp(3): error C2512: 'Game' : no appropriate default constructor available
-     1>c:\documents and settings\localmgr\my documents\csse376\beer\beer\beer\beer\launcher.cpp(6): fatal error C1075: end of file found before the left brace '{' at 'c:\documents and settings\localmgr\my documents\csse376\beer\beer\beer\beer\launcher.cpp(3)' was matched
-         Game.cpp
-     1>c:\documents and settings\localmgr\my documents\csse376\beer\beer\beer\beer\game.cpp(4): error C2512: 'Player' : no appropriate default constructor available
-         Generating Code...
-     1>Done Building Project "C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\Beer\Beer\Beer.vcxproj" (build target(s)) -- FAILED.
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Region.cpp
+         Region.cpp
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\BeerTest\Debug\Beer.lib" /NOLOGO Debug\Game.obj
+         Debug\Item.obj
+         Debug\Launcher.obj
+         Debug\Player.obj
+         Debug\Region.obj
+         Debug\View.obj
+     1>Launcher.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>Game.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         Beer.vcxproj -> C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\BeerTest\Debug\Beer.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\Beer.unsuccessfulbuild".
+         Touching "Debug\Beer.lastbuildstate".
+     1>Done Building Project "C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\Beer\Beer\Beer.vcxproj" (build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:02.37
+Time Elapsed 00:00:00.85
