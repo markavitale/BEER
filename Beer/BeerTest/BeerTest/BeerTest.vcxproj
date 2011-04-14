@@ -63,8 +63,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameTest.cpp" />
     <ClCompile Include="ItemTest.cpp" />
+    <ClCompile Include="LauncherTest.cpp" />
+    <ClCompile Include="PlayerTest.cpp" />
     <ClCompile Include="RegionTest.cpp" />
+    <ClCompile Include="ViewTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Beer\Beer\Beer.vcxproj">

@@ -1,5 +1,6 @@
 #include <string>
 #include "Item.h"
+using namespace std;
 
 class Player {
 	public:
@@ -10,4 +11,5 @@ class Player {
 		void combineItems(Item a, Item b);
 		static Item inventory[];
 		int clickCount;
+		string playerName;
 };
