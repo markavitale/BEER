@@ -12,7 +12,7 @@ BEGIN_TEST(getXTest)
 
 }
 END_TEST
-	BEGIN_TEST(getYTest) 
+BEGIN_TEST(getYTest) 
 {
 	WIN_ASSERT_EQUAL(newRegion.getY(),2);
 }
