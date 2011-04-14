@@ -41,7 +41,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\Users\vitalema\Documents\Courses\CSSE 376\BEER\Beer;C:\Users\vitalema\Documents\Courses\CSSE 376\winunit\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer;C:\Documents and Settings\localmgr\Desktop\winunit\Include;C:\Users\vitalema\Documents\Courses\CSSE 376\BEER\Beer;C:\Users\vitalema\Documents\Courses\CSSE 376\winunit\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalUsingDirectories>%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
     </ClCompile>
     <Link>
