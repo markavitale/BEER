@@ -43,3 +43,17 @@ BEGIN_TEST(isInsideRegionTest2)
 	WIN_ASSERT_FALSE(newRegion.isInsideRegion(15,23));
 }
 END_TEST
+
+BEGIN_TEST(isInsideRegionTest3) 
+{
+
+	WIN_ASSERT_FALSE(newRegion.isInsideRegion(2,100));
+}
+END_TEST
+
+BEGIN_TEST(isInsideRegionTest4) 
+{
+
+	WIN_ASSERT_FALSE(newRegion.isInsideRegion(100,3));
+}
+END_TEST
