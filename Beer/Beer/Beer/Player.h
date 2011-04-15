@@ -12,7 +12,7 @@ class Player {
 		void addItem(Item a);
 	private: 
 		void combineItems(Item a, Item b);
-		Item inventory[10];
+		//Item inventory[10];
 		int clickCount;
 		string playerName;
 		int actualArraySize;

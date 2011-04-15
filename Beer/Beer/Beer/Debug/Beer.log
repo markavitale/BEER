@@ -1,17 +1,25 @@
-﻿Build started 4/14/2011 2:00:24 PM.
-     1>Project "C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\Beer\Beer\Beer.vcxproj" on node 2 (build target(s)).
+﻿Build started 4/15/2011 1:27:54 PM.
+     1>Project "C:\Users\vitalema\Documents\Courses\CSSE 376\BEER\Beer\Beer\Beer\Beer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\Beer.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\Beer.unsuccessfulbuild".
        ClCompile:
-         All outputs are up-to-date.
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Player.cpp
+         Player.cpp
        Lib:
-         All outputs are up-to-date.
-         Beer.vcxproj -> C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\BeerTest\Debug\Beer.lib
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\vitalema\Documents\Courses\CSSE 376\BEER\Beer\BeerTest\Debug\Beer.lib" /NOLOGO Debug\Game.obj
+         Debug\Item.obj
+         Debug\Launcher.obj
+         Debug\Player.obj
+         Debug\Region.obj
+         Debug\View.obj
+     1>Launcher.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+     1>Game.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+         Beer.vcxproj -> C:\Users\vitalema\Documents\Courses\CSSE 376\BEER\Beer\BeerTest\Debug\Beer.lib
        FinalizeBuildStatus:
          Deleting file "Debug\Beer.unsuccessfulbuild".
          Touching "Debug\Beer.lastbuildstate".
-     1>Done Building Project "C:\Documents and Settings\localmgr\My Documents\CSSE376\BEER\Beer\Beer\Beer\Beer.vcxproj" (build target(s)).
+     1>Done Building Project "C:\Users\vitalema\Documents\Courses\CSSE 376\BEER\Beer\Beer\Beer\Beer.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.06
+Time Elapsed 00:00:00.76

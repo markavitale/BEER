@@ -30,14 +30,14 @@ END_TEST
 }
 END_TEST
 
-	BEGIN_TEST(isInsideRegionTest1) 
+BEGIN_TEST(isInsideRegionTest1) 
 {
 
 	WIN_ASSERT_TRUE(newRegion.isInsideRegion(2,3));
 }
 END_TEST
 
-	BEGIN_TEST(isInsideRegionTest2) 
+BEGIN_TEST(isInsideRegionTest2) 
 {
 
 	WIN_ASSERT_FALSE(newRegion.isInsideRegion(15,23));

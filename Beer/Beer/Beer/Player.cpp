@@ -3,7 +3,7 @@
 Player::Player(string playerN) {
 	playerName = playerN;
 	clickCount = 0;
-	actualArraySize = 0;
+	actualArraySize= 0;
 };
 
 void Player::increaseClickCount() {
@@ -20,7 +20,7 @@ bool Player::hasItem(Item theItem){
 }
 
 void Player::addItem(Item a) {
-	inventory[actualArraySize] = a;
+//	inventory[actualArraySize] = a;
 	actualArraySize ++;
 }
 void Player::combineItems(Item a, Item b) {
