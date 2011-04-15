@@ -1,4 +1,8 @@
+# Build binaries
+Release
 Debug
+
+# Visual Studio project metadata
 *.sdf
 *.opensdf
 *.suo
