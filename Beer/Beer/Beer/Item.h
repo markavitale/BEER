@@ -6,6 +6,7 @@ class Item {
 		Item (string desc, Item itemList[]);
 		Item (string desc);
 		string getDesc();
+		bool canInteractWithItem(Item i);
 	private:
 		string description;
 	//	static Item interactableItems[25];// have to set arbitrary size
