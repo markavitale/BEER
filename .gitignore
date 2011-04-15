@@ -1,6 +1,7 @@
 # Build binaries
 Release
 Debug
+ipch
 
 # Visual Studio project metadata
 *.sdf
