@@ -3,8 +3,8 @@ using namespace std;
 
 class Item {
 	public:
-		Item (std::string desc, Item itemList[]);
-		Item (std::string desc);
+		Item (string desc, Item itemList[]);
+		Item (string desc);
 		string getDesc();
 		bool canInteractWithItem(Item i);
 	private:

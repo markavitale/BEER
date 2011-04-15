@@ -7,9 +7,13 @@ class Player {
 		Player (std::string playerName);
 		void increaseClickCount();
 		bool hasItem(Item i);
+		string getPlayerName();
+		int getClickCount();
+		void addItem(Item a);
 	private: 
 		void combineItems(Item a, Item b);
-		static Item inventory[];
+		Item inventory[10];
 		int clickCount;
 		string playerName;
+		int actualArraySize;
 };
