@@ -3,14 +3,14 @@
 
 
 Player p = Player("tyler");
-View v[10];
-v[0] = View();
+View v;
+
 Game g = Game(p, v);
 
 BEGIN_TEST(testGameCreatePlayer) 
 {
 
-    WIN_ASSERT_EQUAL("tyler",g.getPlayer());
+    WIN_ASSERT_EQUAL(g.getPlayer().getPlayerName(), "tyler");
 }
 END_TEST
 
@@ -18,36 +18,49 @@ END_TEST
 BEGIN_TEST(testGameCreateView) 
 {
 
-    WIN_ASSERT_EQUAL(v[0], g.getCurrentView());
+    WIN_ASSERT_EQUAL(v, g.getCurrentView());
 }
 END_TEST
 
-    BEGIN_TEST(testMuteGame1) 
+BEGIN_TEST(testMuteGame1) 
 {
 
-    WIN_ASSERT_EQUAL(false,g.isMuted());
+    WIN_ASSERT_EQUAL(false,g.isGameMuted());
 }
 END_TEST
 
-        BEGIN_TEST(testMuteGame2) 
+BEGIN_TEST(testMuteGame2) 
 {
     g.muteGame();
-    WIN_ASSERT_EQUAL(false,g.isMuted());
+    WIN_ASSERT_EQUAL(true,g.isGameMuted());
 }
 END_TEST
 
-    END_TEST
+BEGIN_TEST(testMuteGame2) 
+{
+    g.unMuteGame();
+    WIN_ASSERT_EQUAL(false,g.isGameMuted());
+}
+END_TEST
 
-    BEGIN_TEST(testPauseGame1) 
+
+BEGIN_TEST(testPauseGame1) 
 {
 
-    WIN_ASSERT_EQUAL(false,g.isPaused());
+    WIN_ASSERT_EQUAL(false,g.isGamePaused());
 }
 END_TEST
 
 BEGIN_TEST(testPauseGame2) 
 {
     g.pauseGame();
-    WIN_ASSERT_EQUAL(false,g.isPaused());
+    WIN_ASSERT_EQUAL(true,g.isGamePaused());
+}
+END_TEST
+
+BEGIN_TEST(testPauseGame2) 
+{
+    g.unPauseGame();
+    WIN_ASSERT_EQUAL(false,g.isGamePaused());
 }
 END_TEST

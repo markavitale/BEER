@@ -6,6 +6,12 @@ Player::Player(string playerN) {
 	actualArraySize= 0;
 };
 
+Player::Player() {
+	playerName = "Player";
+	clickCount = 0;
+	actualArraySize= 0;
+};
+
 void Player::increaseClickCount() {
 	clickCount ++;
 };

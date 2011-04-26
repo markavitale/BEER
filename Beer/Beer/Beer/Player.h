@@ -5,6 +5,7 @@ using namespace std;
 class Player {
 	public:
 		Player (std::string playerName);
+		Player ();
 		void increaseClickCount();
 		bool hasItem(Item i);
 		string getPlayerName();
