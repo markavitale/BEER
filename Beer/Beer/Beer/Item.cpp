@@ -16,3 +16,7 @@ Item::Item(string desc) {
 string Item::getDesc() {
 	return description;
 };
+
+void Item::setInteractable(Item interactables[]){
+	
+};

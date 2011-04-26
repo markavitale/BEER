@@ -10,9 +10,12 @@ Item i2 = Item("Item 2");
 Item i3 = Item("Item 3");
 Item i4 = Item("Item 4");
 
-i1.setInteractable({i2,i3});
-i2.setInteractable({i1,i4});
-i3.setInteractable({i1});
+	i1.setInteractable({i2,i3});
+	i2.setInteractable({i1,i4});
+	i3.setInteractable({i1});
+
+
+
 
 BEGIN_TEST(testGetShortDescription)
   {
@@ -32,7 +35,8 @@ BEGIN_TEST(testGetLongDescription)
  
 BEGIN_TEST(testIsInteractable0)
  {
-	 WIN_ASSERT_TRUE(i1.canInteractWithItem(i2));
+	
+	WIN_ASSERT_TRUE(i1.canInteractWithItem(i2));
  }
  END_TEST
 
