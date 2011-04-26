@@ -10,13 +10,6 @@ Item i2 = Item("Item 2");
 Item i3 = Item("Item 3");
 Item i4 = Item("Item 4");
 
-	i1.setInteractable({i2,i3});
-	i2.setInteractable({i1,i4});
-	i3.setInteractable({i1});
-
-
-
-
 BEGIN_TEST(testGetShortDescription)
   {
 	string s = "short description";
@@ -35,7 +28,13 @@ BEGIN_TEST(testGetLongDescription)
  
 BEGIN_TEST(testIsInteractable0)
  {
-	
+	i1.addInteractableItem(i2);
+	i1.addInteractableItem(i3);
+	i2.addInteractableItem(i1);
+	i2.addInteractableItem(i4);
+	i3.addInteractableItem(i1);
+	i4.addInteractableItem(i2);
+
 	WIN_ASSERT_TRUE(i1.canInteractWithItem(i2));
  }
  END_TEST
