@@ -11,7 +11,7 @@ class Item {
 		void addInteractableItem(Item i);
 	private:
 		string description;
-		static vector<Item> interactableItems;
+		vector<Item> interactableItems;
 
 
 };
