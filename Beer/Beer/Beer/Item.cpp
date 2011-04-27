@@ -21,6 +21,4 @@ bool Item::canInteractWithItem(Item i){
 		}
 	}
 	return false;
-	//return(find(interactableItems.begin(), interactableItems.end(), i)
-	//	!= interactableItems.end());
 };

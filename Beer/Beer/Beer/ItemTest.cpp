@@ -8,7 +8,7 @@ Item i2 = Item("Item 2");
 Item i3 = Item("Item 3");
 Item i4 = Item("Item 4");
 
-BEGIN_TEST(testGetShortDescription)
+BEGIN_TEST(ItemTestGetShortDescription)
 {
 	string s = "short description";
 	Item newItem = Item(s);
@@ -16,7 +16,7 @@ BEGIN_TEST(testGetShortDescription)
 }
 END_TEST
 
-BEGIN_TEST(testGetLongDescription)
+BEGIN_TEST(ItemTestGetLongDescription)
 {
 	string s = "This is an example of a really really long description. Our descriptions will be shorter than this so this is a good way to test they will all work!";
 	Item newItem = Item(s);
@@ -24,7 +24,7 @@ BEGIN_TEST(testGetLongDescription)
 }
 END_TEST
 
-BEGIN_TEST(testIsInteractable0)
+BEGIN_TEST(ItemTestIsInteractable0)
 {
 	i1.addInteractableItem(i2);
 	i1.addInteractableItem(i3);
@@ -37,24 +37,24 @@ BEGIN_TEST(testIsInteractable0)
 }
 END_TEST
 
-BEGIN_TEST(testIsInteractable1)
+BEGIN_TEST(ItemTestIsInteractable1)
 {
 	WIN_ASSERT_TRUE(i1.canInteractWithItem(i3));
 }
 END_TEST
 
-BEGIN_TEST(testIsInteractable2)
+BEGIN_TEST(ItemTestIsInteractable2)
 {
 	WIN_ASSERT_FALSE(i1.canInteractWithItem(i4));
 }
 END_TEST
 
-BEGIN_TEST(testIsInteractable3)
+BEGIN_TEST(ItemTestIsInteractable3)
 {
 	WIN_ASSERT_FALSE(i1.canInteractWithItem(i4));
 }
 END_TEST
-BEGIN_TEST(testIsInteractable4)
+BEGIN_TEST(ItemTestIsInteractable4)
 {
 	WIN_ASSERT_TRUE(i2.canInteractWithItem(i4));
 }

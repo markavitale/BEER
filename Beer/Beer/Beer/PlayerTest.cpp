@@ -6,27 +6,27 @@ Player newPlayer = Player(s);
 Item item = Item("item");
 Item item2 = Item("item 2");
 
-BEGIN_TEST(testPlayerName) 
+BEGIN_TEST(PlayerTestPlayerName) 
 {
 
 	WIN_ASSERT_EQUAL(s, newPlayer.getPlayerName());
 }
 END_TEST
-BEGIN_TEST(testPlayerClickCount0) 
+BEGIN_TEST(PlayerTestPlayerClickCount0) 
 {
 
 	WIN_ASSERT_EQUAL(0, newPlayer.getClickCount());
 }
 END_TEST
 
-BEGIN_TEST(testPlayerClickCount1) 
+BEGIN_TEST(PlayerTestPlayerClickCount1) 
 {
 	newPlayer.increaseClickCount();
 	WIN_ASSERT_EQUAL(1, newPlayer.getClickCount());
 }
 END_TEST
 
-BEGIN_TEST(testPlayerClickCount10) 
+BEGIN_TEST(PlayerTestPlayerClickCount10) 
 {
 	for (int i = 0; i <9; i++) {
 		newPlayer.increaseClickCount();
@@ -35,14 +35,14 @@ BEGIN_TEST(testPlayerClickCount10)
 }
 END_TEST
 
-BEGIN_TEST(testInventory1)
+BEGIN_TEST(PlayerTestInventory1)
 {
 	newPlayer.addItem(item);
 	WIN_ASSERT_TRUE(newPlayer.hasItem(item));
 }
 END_TEST
 
-BEGIN_TEST(testInventory2)
+BEGIN_TEST(PlayerTestInventory2)
 {
 	WIN_ASSERT_FALSE(newPlayer.hasItem(item2));
 }
