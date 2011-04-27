@@ -16,18 +16,17 @@ void Player::increaseClickCount() {
 	clickCount ++;
 };
 
-bool Player::hasItem(Item theItem){
-	//for (int i = 0; i < actualArraySize; i++) {
-	//	if (inventory[i] == theItem) {		//need to write and Item.equals(Item) method
-	//		return true;
-	//	};
-//	};
+bool Player::hasItem(Item i){
+	for(int n = 0; n < inventory.size();n++){
+		if(inventory.at(n).getDesc() == i.getDesc()){
+			return true;
+		}
+	}
 	return false;
 }
 
-void Player::addItem(Item a) {
-//	inventory[actualArraySize] = a;
-	actualArraySize ++;
+void Player::addItem(Item i) {
+	inventory.push_back(i);
 }
 void Player::combineItems(Item a, Item b) {
 	

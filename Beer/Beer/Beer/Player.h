@@ -1,5 +1,6 @@
 #include <string>
 #include "Item.h"
+#include <vector>
 using namespace std;
 
 class Player {
@@ -13,7 +14,7 @@ class Player {
 		void addItem(Item a);
 	private: 
 		void combineItems(Item a, Item b);
-		//Item inventory[10];
+		vector<Item> inventory;
 		int clickCount;
 		string playerName;
 		int actualArraySize;
