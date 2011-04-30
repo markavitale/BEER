@@ -18,7 +18,7 @@ END_TEST
 BEGIN_TEST(GameTestGameCreateView) 
 {
 
-   // WIN_ASSERT_EQUAL(v, g.getCurrentView());
+    WIN_ASSERT_EQUAL(v, g.getCurrentView());
 }
 END_TEST
 
@@ -62,5 +62,15 @@ BEGIN_TEST(GameTestPauseGame3)
 {
     g.unPauseGame();
     WIN_ASSERT_FALSE(g.isGamePaused());
+}
+END_TEST
+
+BEGIN_TEST(testWindowCreation) 
+// can be expanded into multiple tests once we figure out how window creation actually works
+{
+	Window w;
+	g.createWindow(w);
+WIN_ASSERT_EQUAL(g.getWindow(), w);
+
 }
 END_TEST

@@ -16,7 +16,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -41,6 +41,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Documents and Settings\localmgr\Desktop\winunit\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -61,11 +62,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameTest.cpp" />
     <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemTest.cpp" />
     <ClCompile Include="Launcher.cpp" />
+    <ClCompile Include="LauncherTest.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerTest.cpp" />
     <ClCompile Include="Region.cpp" />
+    <ClCompile Include="RegionTest.cpp" />
     <ClCompile Include="View.cpp" />
+    <ClCompile Include="ViewTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
